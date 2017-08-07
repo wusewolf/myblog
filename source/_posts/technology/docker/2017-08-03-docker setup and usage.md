@@ -7,7 +7,7 @@ tags: docker
 ---
 
 
-#docker安装
+# docker安装
 ## 1.ubuntu14.04.5 环境  
 apt-get install docker.io    
 或安装社区版 https://download.docker.com/linux/ubuntu/dists/trusty/pool/stable/amd64/docker-ce_17.03.2~ce-0~ubuntu-trusty_amd64.deb
@@ -40,4 +40,25 @@ Docker主机的地址是linux虚拟机的地址，它被启动的时候，会分
 
 Windows Architecture Diagram
 
+## 3.docker命令使用
 
+- docker tag设置镜像标签
+
+
+    root@806RTH:~# docker tag --help
+    Usage:  docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
+    Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+    Options:
+    --help   Print usage
+
+
+注意： ** source_image格式为： <font color="red">username/repository name<font> **
+
+    root@806RTH:~# docker images
+    REPOSITORY          TAG                               IMAGE ID            CREATED             SIZE
+    local               ubuntu14.04_chameleon_build_env   ed9ebadb41c9        2 days ago          714 MB
+    root@806RTH:~# docker image tag ed9ebadb41c9  local/ubuntu:ubuntu14.04_chameleon_build_env
+    root@806RTH:~# docker images
+    REPOSITORY          TAG                               IMAGE ID            CREATED             SIZE
+    local/ubuntu        ubuntu14.04_chameleon_build_env   ed9ebadb41c9        2 days ago          714 MB
+    local               ubuntu14.04_chameleon_build_env   ed9ebadb41c9        2 days ago          714 MB
