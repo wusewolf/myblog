@@ -3,7 +3,7 @@ layout: post
 title:  让进程在后台可靠运行的几种方法       
 date:   2017-08-12 14:55:11
 category: "技术"
-tags: "Linux" 
+tags: "Linux tips" 
 ---
 
 ** 让进程在后台可靠运行的几种方法---总结 **
