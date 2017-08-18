@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 推荐的windows pxe servers     
+title: Windows pxe servers推荐    
 date:   2017-08-16 14:55:11
 category: "技术"
 tags: "PXE" 
